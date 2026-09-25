@@ -1,121 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #222;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #eef4ff, #f8fbff);
+    color: #1f2937;
+    line-height: 1.7;
 }
 
+/* HEADER */
 header {
+    position: relative;
     text-align: center;
-    padding: 40px 20px;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
+    padding: 60px 20px 45px;
+    color: white;
+    background: linear-gradient(135deg, #1117d8, #245cff, #00a8ff);
+    overflow: hidden;
+}
+
+/* Dekorasi background */
+header::before,
+header::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+header::before {
+    width: 280px;
+    height: 280px;
+    top: -150px;
+    left: -80px;
+}
+
+header::after {
+    width: 350px;
+    height: 350px;
+    right: -130px;
+    bottom: -220px;
+}
+
+header h1,
+header p,
+nav {
+    position: relative;
+    z-index: 1;
 }
 
 header h1 {
-    font-size: 32px;
-    margin-bottom: 5px;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
 }
 
 header p {
-    color: #777;
-    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 28px;
 }
 
+/* NAVIGATION */
 nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: #333;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 30px;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: #0077ff;
+    background: white;
+    color: #1455d9;
+    transform: translateY(-2px);
 }
 
+/* MAIN */
 main {
-    max-width: 900px;
-    margin: 40px auto;
+    max-width: 950px;
+    margin: 45px auto;
     padding: 0 20px;
 }
 
+/* CARD SECTION */
 section {
-    background-color: white;
-    padding: 30px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 32px;
     margin-bottom: 25px;
-    border-radius: 12px;
-    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    border: 1px solid #e4eaff;
+    box-shadow: 0 10px 30px rgba(40, 70, 140, 0.08);
+    transition: 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(40, 70, 140, 0.13);
 }
 
 section h2 {
+    color: #164ed8;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
+section h3 {
+    color: #27364d;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+/* FOTO PROFIL */
 #biodata img {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     object-fit: cover;
     border-radius: 50%;
     margin: 0 auto 25px;
-    border: 3px solid #eee;
+    border: 6px solid white;
+    outline: 4px solid #2b65f5;
+    box-shadow: 0 10px 25px rgba(36, 92, 255, 0.25);
 }
 
+/* BIODATA */
 #biodata p {
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
+    padding: 11px 0;
+    border-bottom: 1px solid #edf0f7;
 }
 
+#biodata p:last-child {
+    border-bottom: none;
+}
+
+strong {
+    color: #164ed8;
+}
+
+/* LIST */
 ul {
-    padding-left: 20px;
+    padding-left: 22px;
 }
 
 li {
     margin-bottom: 8px;
 }
 
+li::marker {
+    color: #2864f5;
+}
+
+/* LINK */
 section a {
-    color: #0077ff;
+    color: #1757df;
     text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
 }
 
 section a:hover {
+    color: #0b32a1;
     text-decoration: underline;
 }
 
+/* SOCIAL MEDIA */
+#social li {
+    margin-bottom: 12px;
+}
+
+/* HILANGKAN GARIS HR */
 hr {
     display: none;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
     padding: 30px 20px;
-    color: #777;
+    color: #718096;
     font-size: 14px;
 }
 
-/* Tampilan untuk HP */
+/* RESPONSIVE UNTUK HP */
 @media (max-width: 600px) {
 
     header {
-        padding: 30px 15px;
+        padding: 45px 15px 35px;
     }
 
     header h1 {
-        font-size: 26px;
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 8px 12px;
     }
 
     main {
@@ -124,6 +229,16 @@ footer {
     }
 
     section {
-        padding: 20px;
+        padding: 23px;
+        border-radius: 16px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    #biodata img {
+        width: 145px;
+        height: 145px;
     }
 }
