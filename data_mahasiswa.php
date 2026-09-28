@@ -3,7 +3,7 @@
 $mahasiswa = [
     "nim" => "4112755201250015",
     "nama" => "Shyam AdjIe",
-    "prodi" => "Informatika",
+    "prodi" => "S1 Informatika",
     "gender" => "Laki-laki",
     "alamat" => "Jakarta, Indonesia",
     "umur" => "20 Tahun",
