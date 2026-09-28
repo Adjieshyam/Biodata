@@ -1,147 +1,223 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Biodata</title>
+
+    <title>Profile Mahasiswa</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Personal Biodata</h1>
-        <p>Website Biodata Mahasiswa</p>
+    <div class="container">
 
-        <!-- NAVIGATION -->
-        <nav>
-            <a href="#biodata">Biodata</a> |
-            <a href="#additional-information">Additional Information</a> |
-            <a href="#about">About Me</a> |
-            <a href="#education">Education</a> |
-            <a href="#hobby">Hobby</a> |
-            <a href="#social">Social Media</a>
-        </nav>
-    </header>
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
 
-    <hr>
+            <div class="logo">
+                <div class="logo-icon">M</div>
+                <h2>Mahasiswa</h2>
+            </div>
 
-    <!-- MAIN CONTENT -->
-    <main>
+            <nav class="navbar">
+                <a href="#beranda" class="active">
+                    <span>⌂</span>
+                    Beranda
+                </a>
 
-        <!-- BIODATA SECTION -->
-        <section id="biodata">
-            <h2>Biodata</h2>
+                <a href="#profile">
+                    <span>👤</span>
+                    Profile
+                </a>
 
-            <img src="foto.jpg" alt="Foto Saya" width="150">
+                <a href="#data">
+                    <span>▣</span>
+                    Data Mahasiswa
+                </a>
 
-            <p><strong>Nama:</strong> Shyam adjie</p>
-            <p><strong>NIM:</strong> 4112755201250015</p>
-            <p><strong>Program Studi:</strong> Teknik Informatika</p>
-            <p><strong>Email:</strong> shyam.adjie.fict@krw.horizon.ac.id</p>
-        </section>
+                <a href="#pendidikan">
+                    <span>🎓</span>
+                    Pendidikan
+                </a>
 
-        <hr>
+                <a href="#hobi">
+                    <span>♡</span>
+                    Hobi
+                </a>
+            </nav>
 
-        <!-- ADDITIONAL INFORMATION SECTION -->
-        <section id="additional-information">
-            <h2>Additional Information</h2>
+            <div class="sidebar-footer">
+                <p>Student Profile</p>
+                <small>© 2026</small>
+            </div>
 
-            <p><strong>Alamat:</strong> Karawang</p>
-            <p><strong>No. Telepon:</strong> 085695334121</p>
+        </aside>
 
-            <h3>Skills</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
 
-            <h3>Languages</h3>
-            <ul>
-                <li>Bahasa Indonesia</li>
-                <li>English</li>
-            </ul>
-        </section>
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
 
-        <hr>
+            <!-- HEADER -->
+            <header class="top-header" id="beranda">
+                <div>
+                    <p class="welcome">Selamat Datang 👋</p>
+                    <h1>Profile Mahasiswa</h1>
+                </div>
 
-        <!-- ABOUT ME SECTION -->
-        <section id="about">
-            <h2>About Me</h2>
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Aktif
+                </div>
+            </header>
 
-            <p>
-                Halo, saya adalah seorang mahasiswa yang sedang mempelajari
-                teknologi dan pengembangan website.
-                Saya tertarik untuk mempelajari pemrograman dan teknologi baru.
-            </p>
-        </section>
 
-        <hr>
+            <!-- PROFILE CARD -->
+            <section class="profile-card" id="profile">
 
-        <!-- EDUCATION SECTION -->
-        <section id="education">
-            <h2>Education</h2>
+                <div class="profile-photo">
+                    <img src="foto.jpg" alt="Foto Mahasiswa">
+                </div>
 
-            <ul>
-                <li>SD - SDN Sedayulawas 2</li>
-                <li>SMP - SMPN 2 Majalaya</li>
-                <li>SMK - SMKN 3 Karawang</li>
-                <li>Kuliah - Horizon University</li>
-            </ul>
-        </section>
+                <div class="profile-info">
+                    <span class="profile-label">MAHASISWA</span>
 
-        <hr>
+                    <h2>Shyam AdjIe</h2>
 
-        <!-- HOBBY SECTION -->
-        <section id="hobby">
-            <h2>Hobby</h2>
+                    <p>
+                        Mahasiswa yang memiliki ketertarikan
+                        pada teknologi, pemrograman, dan desain web.
+                    </p>
 
-            <ul>
-                <li>Bermain game</li>
-                <li>Mendengarkan musik</li>
-                <li>Belajar pemrograman</li>
-            </ul>
-        </section>
+                    <div class="profile-tags">
+                        <span>Informatika</span>
+                        <span>Web Development</span>
+                    </div>
+                </div>
 
-        <hr>
+            </section>
 
-        <!-- SOCIAL MEDIA SECTION -->
-        <section id="social">
-            <h2>Social Media</h2>
 
-            <ul>
-                <li>
-                    <a href="https://instagram.com/Adjie" target="_blank">
-                        Instagram
-                    </a>
-                </li>
+            <!-- DATA MAHASISWA -->
+            <section class="section" id="data">
 
-                <li>
-                    <a href="https://github.com/Adjieshyam" target="_blank">
-                        GitHub
-                    </a>
-                </li>
+                <div class="section-title">
+                    <div>
+                        <span>DATA</span>
+                        <h2>Informasi Mahasiswa</h2>
+                    </div>
+                </div>
 
-                <li>
-                    <a href="https://linkedin.com/Shyam_adjie" target="_blank">
-                        LinkedIn
-                    </a>
-                </li>
-            </ul>
-        </section>
+                <div class="data-grid">
 
-    </main>
+                    <div class="data-card">
+                        <span>NIM</span>
+                        <h3>4112755201250015</h3>
+                    </div>
 
-    <hr>
+                    <div class="data-card">
+                        <span>Nama</span>
+                        <h3>Shyam AdjIe</h3>
+                    </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Shyam adjie. All Rights Reserved.</p>
-    </footer>
+                    <div class="data-card">
+                        <span>Program Studi</span>
+                        <h3>Informatika</h3>
+                    </div>
+
+                    <div class="data-card">
+                        <span>Jenis Kelamin</span>
+                        <h3>Laki-laki</h3>
+                    </div>
+
+                    <div class="data-card">
+                        <span>Alamat</span>
+                        <h3>Jakarta, Indonesia</h3>
+                    </div>
+
+                    <div class="data-card">
+                        <span>Umur</span>
+                        <h3>20 Tahun</h3>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PENDIDIKAN -->
+            <section class="section" id="pendidikan">
+
+                <div class="section-title">
+                    <div>
+                        <span>PENDIDIKAN</span>
+                        <h2>Riwayat Pendidikan</h2>
+                    </div>
+                </div>
+
+                <div class="education-card">
+
+                    <div class="education-icon">
+                        🎓
+                    </div>
+
+                    <div>
+                        <h3>Horizon University Indonesia</h3>
+                        <p>Program Studi Informatika</p>
+                        <small>2025 - Sekarang</small>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- HOBI -->
+            <section class="section" id="hobi">
+
+                <div class="section-title">
+                    <div>
+                        <span>INTEREST</span>
+                        <h2>Hobi & Keahlian</h2>
+                    </div>
+                </div>
+
+                <div class="hobby-grid">
+
+                    <div class="hobby-card">
+                        <div>💻</div>
+                        <h3>Coding</h3>
+                        <p>Mempelajari pemrograman dan teknologi.</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div>🎨</div>
+                        <h3>Design</h3>
+                        <p>Membuat desain antarmuka yang sederhana.</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div>🎮</div>
+                        <h3>Gaming</h3>
+                        <p>Bermain game di waktu luang.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- FOOTER -->
+            <footer>
+                <p>© 2026 Student Profile • Made with HTML & CSS</p>
+            </footer>
+
+        </main>
+
+    </div>
 
 </body>
 </html>

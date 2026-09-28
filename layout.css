@@ -1,0 +1,503 @@
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+}
+
+.logo h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 13px 15px;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.navbar a span {
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    color: #6b7280;
+    font-size: 12px;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+
+    padding: 40px 50px;
+
+    max-width: 1500px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.welcome {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 5px;
+}
+
+.top-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.status {
+    padding: 8px 15px;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 13px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    margin-bottom: 45px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.profile-info {
+    max-width: 600px;
+}
+
+.profile-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.profile-info h2 {
+    font-size: 30px;
+    margin: 5px 0 10px;
+}
+
+.profile-info p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.profile-tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.profile-tags span {
+    padding: 7px 13px;
+    border-radius: 20px;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+    margin-bottom: 45px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 21px;
+    margin-top: 3px;
+}
+
+
+/* =========================
+   DATA
+========================= */
+
+.data-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.data-card {
+    padding: 22px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+.data-card span {
+    display: block;
+
+    font-size: 11px;
+
+    margin-bottom: 7px;
+}
+
+.data-card h3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+.education-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-size: 22px;
+}
+
+.education-card h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.education-card p {
+    font-size: 13px;
+}
+
+.education-card small {
+    display: block;
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+
+/* =========================
+   HOBBY
+========================= */
+
+.hobby-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.hobby-card {
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+
+    transition: 0.3s;
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+}
+
+.hobby-card > div {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+.hobby-card h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.hobby-card p {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .sidebar {
+        width: 210px;
+    }
+
+    .main-content {
+        width: calc(100% - 210px);
+        margin-left: 210px;
+        padding: 30px;
+    }
+
+    .data-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hobby-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        display: block;
+    }
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+        min-height: auto;
+
+        padding: 18px;
+
+        display: block;
+    }
+
+    .logo {
+        margin-bottom: 18px;
+    }
+
+    .navbar {
+        flex-direction: row;
+
+        overflow-x: auto;
+
+        gap: 5px;
+    }
+
+    .navbar a {
+        white-space: nowrap;
+        padding: 10px 12px;
+    }
+
+    .sidebar-footer {
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+
+        padding: 25px 18px;
+    }
+
+    .top-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .top-header h1 {
+        font-size: 23px;
+    }
+
+    .profile-card {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+    }
+
+    .profile-tags {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .data-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hobby-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+    .top-header {
+        flex-direction: column;
+    }
+
+    .status {
+        align-self: flex-start;
+    }
+
+    .profile-photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-info h2 {
+        font-size: 24px;
+    }
+}
